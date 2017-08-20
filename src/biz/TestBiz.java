@@ -1,5 +1,7 @@
 package biz;
 
+import dao.DaoFactory;
+import dao.ITestDao;
 import dao.TestDao;
 
 public class TestBiz {
@@ -8,7 +10,7 @@ public class TestBiz {
 	public void testBiz() {
 		
 		
-		TestDao dao = new TestDao();
+		ITestDao dao = DaoFactory.getInstance();
 		dao.testDao();
 		
 		
