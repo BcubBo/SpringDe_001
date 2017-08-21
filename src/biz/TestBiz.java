@@ -21,7 +21,7 @@ public class TestBiz {
 		
 		
 //		ITestDao dao = DaoFactory.getInstance();
-		System.out.println("执行业务逻辑");
+		System.out.println("Hello,Spring");
 		dao.testDao();
 		
 		

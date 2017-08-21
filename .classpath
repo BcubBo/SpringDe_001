@@ -10,7 +10,7 @@
 	<classpathentry exported="true" kind="lib" path="ib/spring-beans-3.2.9.RELEASE.jar"/>
 	<classpathentry exported="true" kind="lib" path="ib/spring-context-3.2.9.RELEASE-javadoc.jar"/>
 	<classpathentry exported="true" kind="lib" path="ib/spring-context-3.2.9.RELEASE-sources.jar"/>
-	<classpathentry exported="true" kind="lib" path="ib/spring-context-3.2.9.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="ib/spring-context-3.2.9.RELEASE.jar" sourcepath="C:/Users/fatal/.m2/repository/org/springframework/spring-context/3.2.9.RELEASE/spring-context-3.2.9.RELEASE-sources.jar"/>
 	<classpathentry exported="true" kind="lib" path="ib/spring-core-3.2.9.RELEASE-javadoc.jar"/>
 	<classpathentry exported="true" kind="lib" path="ib/spring-core-3.2.9.RELEASE-sources.jar"/>
 	<classpathentry exported="true" kind="lib" path="ib/spring-core-3.2.9.RELEASE.jar"/>
