@@ -18,6 +18,16 @@
 			<ref bean="testDao"/>
 		</property>
 	</bean>
+	<bean id="testLogger" class="Logger.TestLogger"></bean>
+	<aop:config>
+		<aop:pointcut expression="execution(public * biz..*(..))" id="pointcut"/>
+		<aop:aspect ref="testLogger">
+			<aop:before method="beforeLogger" pointcut-ref="pointcut"/>
+			<aop:after-returning method="afterReturningLogger" pointcut-ref="pointcut"/>
+		</aop:aspect>
 	
-     
+	</aop:config>
+	
+	
+    
 </beans>
