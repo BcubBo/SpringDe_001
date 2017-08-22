@@ -1,10 +1,9 @@
 package Logger;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.core.Logger;
+import org.apache.log4j.Logger;
 
 public class testLogger {
-	Logger logger = (Logger)LogManager.getLogger();
+	Logger logger = Logger.getLogger(testLogger.class);
 	
 	public void beforeLogger() {
 		
