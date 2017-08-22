@@ -8,7 +8,7 @@ public class testLogger {
 	
 	public void beforeLogger() {
 		
-		logger.debug("方法执行前");
+		logger.info("方法执行前");
 		
 		
 	}
@@ -16,7 +16,7 @@ public class testLogger {
 	public void afterReturningLogger() {
 		
 		
-		logger.debug("方法执行结束后");
+		logger.info("方法执行结束后");
 		
 		
 	}
