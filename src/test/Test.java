@@ -17,7 +17,7 @@ public class Test {
 		//获取bean
 		biz.testBiz("测试JointPoint连接点信息class使用","hiThere");
 		//new FileSystemXmlApplicationContext("");如果文件没有在src文件夹下
-		
+		//sdfsdf
 	}
 
 }
