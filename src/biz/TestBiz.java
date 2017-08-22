@@ -1,29 +1,20 @@
 package biz;
 
 import dao.DaoFactory;
+import dao.ITestBiz;
 import dao.ITestDao;
 import dao.TestDao;
 
-public class TestBiz {
+public class TestBiz implements ITestBiz{
 	
 	private ITestDao dao;
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	public void testBiz() {
-		
+	public String testBiz(String msg,Object result) {
 		
 //		ITestDao dao = DaoFactory.getInstance();
 		System.out.println("Hello,Spring");
 		dao.testDao();
-		
+		return result.toString();
 		
 	}
 	//某方法
@@ -33,6 +24,7 @@ public class TestBiz {
 	public void setDao(ITestDao dao) {
 		this.dao = dao;
 	}//
+
 	
 	
 }

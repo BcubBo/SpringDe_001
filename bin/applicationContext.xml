@@ -23,7 +23,10 @@
 		<aop:pointcut expression="execution(public * biz..*(..))" id="pointcut"/>
 		<aop:aspect ref="testLogger">
 			<aop:before method="beforeLogger" pointcut-ref="pointcut"/>
-			<aop:after-returning method="afterReturningLogger" pointcut-ref="pointcut"/>
+			<aop:after-returning method="afterReturningLogger" pointcut-ref="pointcut"
+			returning="result"
+			
+			/>
 		</aop:aspect>
 	
 	</aop:config>
