@@ -6,5 +6,4 @@ public class NewDao implements ITestDao {
 	public void testDao() {
 		System.out.println("new implements class NewDao");
 	}
-
 }

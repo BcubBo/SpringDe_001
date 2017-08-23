@@ -5,7 +5,7 @@ import dao.ITestBiz;
 import dao.ITestDao;
 import dao.TestDao;
 
-public class TestBiz {
+public class TestBiz implements ITestBiz{
 	
 	private ITestDao dao;
 	

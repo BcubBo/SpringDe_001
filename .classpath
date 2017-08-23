@@ -23,15 +23,15 @@
 	<classpathentry exported="true" kind="lib" path="lib/spring-expression-3.2.9.RELEASE-javadoc.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/spring-expression-3.2.9.RELEASE-sources.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/spring-expression-3.2.9.RELEASE.jar"/>
-	<classpathentry kind="lib" path="lib/log4j-1.2-api-2.8.2-javadoc.jar"/>
-	<classpathentry kind="lib" path="lib/log4j-1.2-api-2.8.2-sources.jar"/>
-	<classpathentry kind="lib" path="lib/log4j-1.2-api-2.8.2.jar"/>
-	<classpathentry kind="lib" path="lib/log4j-api-2.8.2-javadoc.jar"/>
-	<classpathentry kind="lib" path="lib/log4j-api-2.8.2-sources.jar"/>
-	<classpathentry kind="lib" path="lib/log4j-api-2.8.2.jar"/>
-	<classpathentry kind="lib" path="lib/log4j-core-2.8.2-javadoc.jar"/>
-	<classpathentry kind="lib" path="lib/log4j-core-2.8.2-sources.jar"/>
-	<classpathentry kind="lib" path="lib/log4j-core-2.8.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/log4j-api-2.8.2-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/log4j-api-2.8.2-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/log4j-api-2.8.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/log4j-core-2.8.2-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/log4j-core-2.8.2-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/log4j-core-2.8.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/log4j-1.2-api-2.8.2-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/log4j-1.2-api-2.8.2-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/log4j-1.2-api-2.8.2.jar"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

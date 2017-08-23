@@ -19,7 +19,7 @@
 		</property>
 	</bean>
 	<bean id="testLogger" class="Logger.testLogger"></bean>
-	<aop:config>
+	<aop:config proxy-target-class="true">
 		<aop:pointcut expression="execution(public * biz..*(..))" id="pointcut"/>
 		<aop:aspect ref="testLogger">
 			<aop:before method="beforeLogger" pointcut-ref="pointcut"/>
