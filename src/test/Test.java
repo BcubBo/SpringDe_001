@@ -13,7 +13,7 @@ public class Test {
 		
 //		new TestBiz().testBiz();此时会报空指针的异常
 		ApplicationContext appctx = new ClassPathXmlApplicationContext("applicationContext.xml");
-		ITestBiz biz = (ITestBiz)appctx.getBean("testBiz");
+		TestBiz biz = (TestBiz)appctx.getBean("testBiz");
 		//获取bean
 		biz.testBiz("测试JointPoint连接点信息class使用","hiThere");
 		//new FileSystemXmlApplicationContext("");如果文件没有在src文件夹下
