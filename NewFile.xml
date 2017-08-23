@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<Brand name="华为">
+		<Type name="ISO"></Type>
+		<Type name="ISO"></Type>
+	</Brand>
+	<Brand name="apple">
+		<Type name="ISO1"></Type>
+		<Type name="ISO2"></Type>
+	</Brand>
+</root>

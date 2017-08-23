@@ -19,9 +19,6 @@ public class testLogger {
 	public void beforeLogger(JoinPoint jp) {
 		System.out.println(jp.getTarget()+"\n"+jp.getSignature().getName()+"\n"+jp.getArgs()[0]);
 		logger.debug("方法执行前");
-		
-		
-		
 	}
 	
 	public void afterReturningLogger(JoinPoint jp,Object result) {
