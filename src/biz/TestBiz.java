@@ -28,7 +28,9 @@ public class TestBiz implements ITestBiz{
 
 	public TestBiz() {}//无参数构造方法在使用Spring框架的时候需要设置无参数构造方法
 	public TestBiz(ITestDao dao) {
+		
 		this.dao = dao;
+		init();
 	}//有参数构造方法
 	
 	public TestBiz(ITestDao dao,String msg){
@@ -46,8 +48,15 @@ public class TestBiz implements ITestBiz{
 	public TestBiz(ITestDao dao,int id) {
 		
 		this.dao = dao;
+		
 	}//
-
 	
+	//setter设值注入
+	
+	public void init(){
+		
+		dao.testDao();
+	}
+	//初始化
 	
 }

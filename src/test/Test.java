@@ -19,6 +19,7 @@ public class Test {
 		ApplicationContext appctx = new ClassPathXmlApplicationContext("applicationContext.xml");
 		ITestBiz biz = (ITestBiz)appctx.getBean("testBiz");
 		//获取bean
+		//biz.init();
 		biz.testBiz("测试JointPoint连接点信息class使用","hiThere");
 		//new FileSystemXmlApplicationContext("");如果文件没有在src文件夹下
 		//sdfsdf
