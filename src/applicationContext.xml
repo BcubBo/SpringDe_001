@@ -13,13 +13,25 @@
 	<bean class="dao.TestDao" id="testDao"></bean>
 	<!-- xxx testBiz = new biz.TestBiz() -->
 	<!-- testBiz.setDao(testDao); -->
-	<bean class="biz.TestBiz" id="testBiz">
+<!-- 	<bean class="biz.TestBiz" id="testBiz">
 		<property name="dao">
 			<ref bean="testDao"/>
 		</property>
+	</bean> -->
+	<!-- 使用构造方法注入 -->
+	<bean class="biz.TestBiz" id="testBiz">
+		<constructor-arg>
+			<ref bean="testDao"/>
+		</constructor-arg>
+		<!-- 需要几个构造方法就使用几个构造方法 -->
 	</bean>
-	<bean id="testLogger" class="Logger.testLogger"></bean>
-	<aop:config proxy-target-class="true">
+	<bean id="testLogger" class="Logger.testLogger">
+	</bean>
+	
+	
+	
+	<!-- 暂时注销aop切面部分配置，关注焦点回到注入上 -->
+<!-- 	<aop:config proxy-target-class="true">
 		<aop:pointcut expression="execution(public * biz..*(..))" id="pointcut"/>
 		<aop:aspect ref="testLogger">
 			<aop:before method="beforeLogger" pointcut-ref="pointcut"/>
@@ -29,7 +41,7 @@
 			/>
 		</aop:aspect>
 	
-	</aop:config>
+	</aop:config> -->
 	
 	
     

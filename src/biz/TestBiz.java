@@ -22,9 +22,12 @@ public class TestBiz implements ITestBiz{
 		return dao;
 	}//
 	public void setDao(ITestDao dao) {
+		System.out.println("走的构造方法");
 		this.dao = dao;
 	}//
 
-	
-	
+	public TestBiz() {}//无参数构造方法在使用Spring框架的时候需要设置无参数构造方法
+	public TestBiz(ITestDao dao) {
+		this.dao = dao;
+	}//有参数构造方法
 }
