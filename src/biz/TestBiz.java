@@ -30,4 +30,18 @@ public class TestBiz implements ITestBiz{
 	public TestBiz(ITestDao dao) {
 		this.dao = dao;
 	}//有参数构造方法
+	
+	public TestBiz(ITestDao dao,String msg){
+		
+		this.dao = dao;
+		
+	}//
+	
+	public TestBiz(ITestDao dao,int id) {
+		
+		this.dao = dao;
+	}//
+	
+	
+	
 }

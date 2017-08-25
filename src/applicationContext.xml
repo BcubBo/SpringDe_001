@@ -23,6 +23,10 @@
 		<constructor-arg>
 			<ref bean="testDao"/>
 		</constructor-arg>
+		<constructor-arg><!-- 直接量：String 8中值类型 -->
+			<value></value>
+		
+		</constructor-arg>
 		<!-- 需要几个构造方法就使用几个构造方法 -->
 	</bean>
 	<bean id="testLogger" class="Logger.testLogger">
