@@ -37,11 +37,17 @@ public class TestBiz implements ITestBiz{
 		
 	}//
 	
+	public TestBiz(String msg,ITestDao dao){
+		
+		this.dao = dao;
+		
+	}//重载后的构造方法与上一个构造方法不是同一个
+	
 	public TestBiz(ITestDao dao,int id) {
 		
 		this.dao = dao;
 	}//
-	
+
 	
 	
 }
