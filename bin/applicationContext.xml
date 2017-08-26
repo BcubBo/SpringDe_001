@@ -10,11 +10,11 @@
            http://www.springframework.org/schema/context/spring-context-3.2.xsd
            http://www.springframework.org/schema/aop
            http://www.springframework.org/schema/aop/spring-aop-3.2.xsd"
-           
+           default-autowire="byName"
 		>
            <!-- xxx testDao = new dao.TestDao() -->
 	<bean class="dao.TestDao" id="dao"></bean>
-	<bean id="testBiz" class="biz.TestBiz"  autowire="byName"></bean>
+	<bean id="testBiz" class="biz.TestBiz"></bean>
 	<!-- 暂时注销aop切面部分配置，关注焦点回到注入上 -->
 
     
