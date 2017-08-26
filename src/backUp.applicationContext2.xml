@@ -32,6 +32,10 @@
 		需要几个构造方法就使用几个构造方法
 	</bean> -->
 	<bean id="testBiz" class="biz.TestBiz" p:dao-ref="testDao"></bean>
+	<bean id="testBiz" class="biz.TestBiz"  autowire="byType"></bean>
+	<bean class="dao.TestDao" id="dao"></bean>
+	<bean id="testBiz" class="biz.TestBiz"  autowire="byName"></bean>
+<!-- autoWire自动装配 -->	
 <!-- 	<bean id="testLogger" class="Logger.testLogger" >
 		<property name="xx">
 			<map>

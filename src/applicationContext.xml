@@ -13,8 +13,8 @@
            
 		>
            <!-- xxx testDao = new dao.TestDao() -->
-	<bean class="dao.TestDao" id="testDao"></bean>
-	<bean id="testBiz" class="biz.TestBiz" p:dao-ref="testDao" autowire="byType"></bean>
+	<bean class="dao.TestDao" id="dao"></bean>
+	<bean id="testBiz" class="biz.TestBiz"  autowire="byName"></bean>
 	<!-- 暂时注销aop切面部分配置，关注焦点回到注入上 -->
 
     

@@ -34,7 +34,7 @@ public class Test {
 		Map<String,Object> map = new HashMap<String,Object>();
 		//import java.util.Entry;
 		Set<Entry<String,Object>> entry = map.entrySet();
-		//打包发送回entrySet
+		//打包发送回entrySets
 		Iterator<Entry<String,Object>> it = entry.iterator();
 		
 		while(it.hasNext()) {
