@@ -17,28 +17,28 @@
 	<bean class="dao.TestDao" id="testDao"></bean>
 	<!-- xxx testBiz = new biz.TestBiz() -->
 	<!-- testBiz.setDao(testDao); -->
-<!-- 	<bean class="biz.TestBiz" id="testBiz">
+	<bean class="biz.TestBiz" id="testBiz">
 		<property name="dao">
 			<ref bean="testDao"/>
 		</property>
-	</bean> -->
+	</bean>
 	<!-- 使用构造方法注入 -->
-<!-- 	<bean class="biz.TestBiz" id="testBiz">
+	<bean class="biz.TestBiz" id="testBiz">
 		<constructor-arg index="0">
 			<ref bean="testDao"/>
 		</constructor-arg >
-		<constructor-arg index="1" type="java.lang.String">直接量：String 8中值类型
+		<constructor-arg index="1" type="java.lang.String"><!-- 直接量：String 8中值类型 -->
 			<value>xxxxx</value>
 		</constructor-arg>
-		需要几个构造方法就使用几个构造方法
-	</bean> -->
+		<!-- 需要几个构造方法就使用几个构造方法 -->
+	</bean>
 	<bean id="testBiz" class="biz.TestBiz" p:dao-ref="testDao"></bean>
 	<!-- p命名空间使用 -->
 	<bean id="testBiz" class="biz.TestBiz"  autowire="byType"></bean>
 	<bean class="dao.TestDao" id="dao"></bean>
 	<bean id="testBiz" class="biz.TestBiz"  autowire="byName"></bean>
 <!-- autoWire自动装配 -->	
-<!-- 	<bean id="testLogger" class="Logger.testLogger" ></bean>
+	<bean id="testLogger" class="Logger.testLogger" ></bean>
 		<property name="xx">
 			<map>
 				<entry key="0">
@@ -52,8 +52,8 @@
 				</entry>
 			</map>
 		</property>
-	</bean> -->
-<!-- 	<bean id="testLogger" class="Logger.testLogger" ></bean>
+	</bean>
+	<bean id="testLogger" class="Logger.testLogger" ></bean>
 		<property name="xx">
 			<props>
 			
@@ -62,21 +62,21 @@
 			
 			</props>
 		</property>
-	</bean> -->
+	</bean>
 	
-<!-- 	<bean id="testLogger" class="Logger.testLogger" >
-		赋值为null
+	<bean id="testLogger" class="Logger.testLogger" >
+		<!-- 赋值为null -->
 		<property name="xx">
 			<null></null>
 		</property>
-		赋值为空字符串
+		<!-- 赋值为空字符串 -->
 		<property name="yy">
 			<value></value>
 		</property>
-	</bean>	 -->
+	</bean>	
 	
 	<!-- 暂时注销aop切面部分配置，关注焦点回到注入上 -->
-<!-- 	
+	
 	<aop:config proxy-target-class="true">
 		<aop:pointcut expression="execution(public * biz..*(..))" id="pointcut"/>
 		<aop:aspect ref="testLogger">
@@ -85,7 +85,7 @@
 			returning="result"/>
 		</aop:aspect>
 	</aop:config>
-	 -->
+	
 	
     
 </beans>
